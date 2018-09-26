@@ -28,7 +28,6 @@ module.exports = {
     ],
     sidebar: {
       '/get-started/': [
-        'intro',
 		{
           title: 'Zowe overview',
           collapsable: true,
@@ -41,7 +40,6 @@ module.exports = {
         }
       ],
 	  '/user-guide/': [
-	    'intro',
         {
           title: 'Installing Zowe',
           collapsable: true,
@@ -74,7 +72,6 @@ module.exports = {
         }
       ],
       '/extend/': [
-        'intro',
 	    {
           title: 'Extending the Zowe Application Framework',
           collapsable: true,
@@ -144,7 +141,6 @@ module.exports = {
         }
       ],
 	  '/contribute/': [
-        'intro',
 		{
           title: 'How to contribute to documentation',
           collapsable: true,
