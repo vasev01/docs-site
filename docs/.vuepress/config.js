@@ -57,14 +57,14 @@ module.exports = {
         {
           title: 'Configuring Zowe',
           collapsable: true,
-          children: ['mvd-zluxconfiguration', 'cli-configuringcli']
+          children: ['mvd-configuration', 'cli-configuringcli']
         },
         {
           title: 'Using Zowe',
           collapsable: true,
           children: [
             'using',
-            'usingzlux',
+            'mvd-using',
             'usingapis',
             'api-mediation-api-catalog',
             'cli-usingcli'
@@ -73,7 +73,7 @@ module.exports = {
       ],
       '/extend/': [
 	    {
-          title: 'Extending the Zowe Application Framework',
+          title: 'Guide: Extending Zowe Application Framework',
           collapsable: true,
           children: [
             'mvd-extendingzlux',
@@ -89,27 +89,27 @@ module.exports = {
           ]
         },
 	    {
-          title: 'Tutorial: Getting Started with zLUX',
+          title: 'Tutorials: Extending Zowe Application Framework',
           collapsable: true,
-          children: ['overview', 'zlux-workshop-user-browser']
+          children: ['tutorials/overview', 'tutorials/zlux-workshop-user-browser']
         },
 		{
-          title: 'Sample: zLUX Samples',
+          title: 'Samples zLUX Samples',
           collapsable: true,
           children: [
-            'ui-intro',
-            'iframe-sample',
-            'react-sample',
-            'angular-sample'
+            'samples/ui-intro',
+            'samples/iframe-sample',
+            'samples/react-sample',
+            'samples/angular-sample'
           ]
         },
 		{
-          title: 'Sample: Starter App Samples',
+          title: 'Samples: Starter App Samples',
           collapsable: true,
-          children: ['starter-intro', 'zlux-workshop-starter-app.md']
+          children: ['samples/starter-intro', 'samples/zlux-workshop-starter-app.md']
         },		
         {
-          title: 'Extending Zowe CLI',
+          title: 'Guide: Extending Zowe CLI',
           collapsable: true,
           children: [
             'cli-extending',
@@ -119,25 +119,25 @@ module.exports = {
           ]
         },
 		{
-          title: 'Tutorial: Coming Soon',
+          title: 'Tutorials: Coming Soon',
           collapsable: true,
-          children: ['cli-developPlugins']
+          children: ['tutorials/cli-developPlugins']
         },
 		{
           title:
-            'Tutorial: Onboard Spring Boot REST API services using Zowe API Mediation Layer',
+            'Tutorials: Onboard Spring Boot REST API services using Zowe API Mediation Layer',
           collapsable: true,
-          children: ['api-mediation-usingapiml']
+          children: ['tutorials/api-mediation-usingapiml']
         },		
 		{
-          title: 'Tutorial: Provide Liberty APIs',
+          title: 'Tutorials: Provide Liberty APIs',
           collapsable: true,
-          children: ['libertyAPI', 'ReactJSUI']
+          children: ['tutorials/libertyAPI', 'tutorials/ReactJSUI']
         },
         {
-          title: 'Sample: API Extension Samples',
+          title: 'Samples: API Extension Samples',
           collapsable: true,
-          children: ['api-intro', 'liberty-api-sample']
+          children: ['tutorials/api-intro', 'tutorials/liberty-api-sample']
         }
       ],
 	  '/contribute/': [
