@@ -20,75 +20,28 @@ module.exports = {
     lastUpdated: 'Last Updated', // string | boolean
     sidebarDepth: 2,
     nav: [
-      { text: 'Developer Tutorials', link: '/guides/intro' },
-      { text: 'Samples', link: '/samples/intro' },
-      { text: 'User Guide', link: '/user-guide/aboutthisdoc' },
+      { text: 'Getting Started', link: '/get-started/overview' },
+      { text: 'User Guide', link: '/user-guide/installandconfig' },
+      { text: 'Extend Zowe', link: '/extend/mvd-extendingzlux' },
+	  { text: 'Contribute', link: '/contribute/CONTRIBUTING' },
       { text: 'Zowe.org', link: 'https://zowe.org' }
     ],
     sidebar: {
-      '/guides/': [
+      '/get-started/': [
         'intro',
-        {
-          title: 'Getting Started with zLUX',
-          collapsable: true,
-          children: ['zlux-example-server', 'zlux-workshop-user-browser']
-        },
-        {
-          title: 'Provide Liberty APIs',
-          collapsable: true,
-          children: ['libertyAPI', 'ReactJSUI']
-        },
-        {
-          title:
-            'Onboard Spring Boot REST API services using Zowe API Mediation Layer',
-          collapsable: true,
-          children: ['api-mediation-usingapiml']
-        },
-        {
-          title: 'Coming Soon',
-          collapsable: true,
-          children: ['cli-developPlugins']
-        }
-      ],
-      '/samples/': [
-        'intro',
-        {
-          title: 'Starter App Samples',
-          collapsable: true,
-          children: ['starter-intro', 'zlux-workshop-starter-app.md']
-        },
-        {
-          title: 'API Extension Samples',
-          collapsable: true,
-          children: ['api-intro', 'liberty-api-sample']
-        },
-        {
-          title: 'zLUX Samples',
-          collapsable: true,
-          children: [
-            'ui-intro',
-            'iframe-sample',
-            'react-sample',
-            'angular-sample'
-          ]
-        }
-      ],
-      '/user-guide/': [
-        {
-          title: 'About this documentation',
-          collapsable: true,
-          children: ['download-pdf', 'aboutthisdoc']
-        },
-        {
-          title: 'Summary of changes',
-          collapsable: true,
-          children: ['summaryofchanges']
-        },
-        {
-          title: 'Zowe Overview',
+		{
+          title: 'Zowe overview',
           collapsable: true,
           children: ['overview']
         },
+        {
+          title: 'Release notes',
+          collapsable: true,
+          children: ['summaryofchanges']
+        }
+      ],
+	  '/user-guide/': [
+	    'intro',
         {
           title: 'Installing Zowe',
           collapsable: true,
@@ -118,15 +71,18 @@ module.exports = {
             'api-mediation-api-catalog',
             'cli-usingcli'
           ]
-        },
-        {
-          title: 'Extending zLUX',
+        }
+      ],
+      '/extend/': [
+        'intro',
+	    {
+          title: 'Extending the Zowe Application Framework',
           collapsable: true,
           children: [
             'mvd-extendingzlux',
-            'mvd-creatingzluxappplugins',
-            'mvd-zluxplugindefandstruct',
-            'mvd-zluxdataservices',
+            'mvd-creatingappplugins',
+            'mvd-plugindefandstruct',
+            'mvd-dataservices',
             'mvd-desktopandwindowmgt',
             'mvd-configdataservice',
             'mvd-uribroker',
@@ -135,6 +91,26 @@ module.exports = {
             'mvd-logutility'
           ]
         },
+	    {
+          title: 'Tutorial: Getting Started with zLUX',
+          collapsable: true,
+          children: ['overview', 'zlux-workshop-user-browser']
+        },
+		{
+          title: 'Sample: zLUX Samples',
+          collapsable: true,
+          children: [
+            'ui-intro',
+            'iframe-sample',
+            'react-sample',
+            'angular-sample'
+          ]
+        },
+		{
+          title: 'Sample: Starter App Samples',
+          collapsable: true,
+          children: ['starter-intro', 'zlux-workshop-starter-app.md']
+        },		
         {
           title: 'Extending Zowe CLI',
           collapsable: true,
@@ -144,6 +120,35 @@ module.exports = {
             'cli-cicsplugin',
             'cli-db2plugin'
           ]
+        },
+		{
+          title: 'Tutorial: Coming Soon',
+          collapsable: true,
+          children: ['cli-developPlugins']
+        },
+		{
+          title:
+            'Tutorial: Onboard Spring Boot REST API services using Zowe API Mediation Layer',
+          collapsable: true,
+          children: ['api-mediation-usingapiml']
+        },		
+		{
+          title: 'Tutorial: Provide Liberty APIs',
+          collapsable: true,
+          children: ['libertyAPI', 'ReactJSUI']
+        },
+        {
+          title: 'Sample: API Extension Samples',
+          collapsable: true,
+          children: ['api-intro', 'liberty-api-sample']
+        }
+      ],
+	  '/contribute/': [
+        'intro',
+		{
+          title: 'How to contribute to documentation',
+          collapsable: true,
+          children: ['CONTRIBUTING']
         }
       ],
       '/': ['about']
