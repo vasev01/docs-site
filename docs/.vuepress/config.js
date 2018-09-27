@@ -137,7 +137,7 @@ module.exports = {
         {
           title: 'Samples: API Extension Samples',
           collapsable: true,
-          children: ['tutorials/api-intro', 'tutorials/liberty-api-sample']
+          children: ['tutorials/api-intro', 'samples/liberty-api-sample']
         }
       ],
 	  '/contribute/': [
