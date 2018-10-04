@@ -1,10 +1,10 @@
-# Onboarding patterns: API Gateway
+# Zowe Gateway 
 
 Zowe is a simple flexible architecture that allows easy onboarding of new or existing applications. The following items describe tutorials and samples that can be used to assist the process. 
 
 ## Onboard a REST API using the API gateway (reverse proxy) 
 
-The concept of the API Gateway is a core element of Zowe that brings together services from multiple servers so consumers are able to access these services from one point. 
+The concept of the Zowe Gateway is a core element of Zowe that brings together services from multiple servers so consumers are able to access these services from one point. 
 <!-- Not only that but using Single Sign-on (SSO) the consumer will only have to authenticate once. -->
 
 Internally the Gateway uses a catalog to maintain information about the end services being made available. 

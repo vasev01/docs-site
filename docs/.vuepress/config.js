@@ -13,29 +13,33 @@ module.exports = {
     activeHeaderLinks: false,
     displayAllHeaders: true, // Default: false
     nav: [
-      { text: 'Zowe Extenders', link: '/extender-guides/architecture' },
+      { text: 'User Guide', link: '/user-guide/aboutthisdoc' },      
+      { text: 'Zowe Extenders Guide', link: '/extender-guides/architecture' },
       // { text: 'Developer Tutorials', link: '/guides/intro' },
-      { text: 'Samples', link: '/samples/intro' },
-      { text: 'User Guide', link: '/user-guide/aboutthisdoc' },
+      // { text: 'Samples', link: '/samples/intro' },
       { text: 'Zowe.org', link: 'https://zowe.org' }
     ],
     sidebar: {
       '/extender-guides/': [
         {
-          title: 'Zowe Extenders Guide',
+          title: 'Zowe Architecture Overview',
           collapsable: false,
-          children: ['architecture','onboarding',
-            'moreinfo','deliver']
+          children: ['architecture']
         },
         {
-          title: 'Onboarding Examples',
+          title: 'Adding to the Zowe Gateway',
           collapsable: true,
-          children: ['libertyAPI','ReactJSUI', 'api-mediation-usingapiml','zlux-example-server', 'zlux-workshop-user-browser']
+          children: ['onboarding', 'api-mediation-usingapiml']
+        },        
+        {
+          title: 'Developing JEE Components',
+          collapsable: true,
+          children: ['libertyAPI','ReactJSUI']
         },
         {
-          title: 'Virtual Desktop Examples',
+          title: 'Developing with the Zowe Desktop',
           collapsable: true,
-          children: ['starter-intro', 'zlux-workshop-starter-app.md', 'ui-intro',
+          children: ['starter-intro', 'zlux-workshop-starter-app.md', 'ui-intro','zlux-example-server', 'zlux-workshop-user-browser',
           'iframe-sample',
           'react-sample',
           'angular-sample']
@@ -65,29 +69,29 @@ module.exports = {
       //     children: ['cli-developPlugins']
       //   }
       // ],
-      '/samples/': [
-        'intro',
-        {
-          title: 'Starter App Samples',
-          collapsable: true,
-          children: ['starter-intro', 'zlux-workshop-starter-app.md']
-        },
-        {
-          title: 'API Extension Samples',
-          collapsable: true,
-          children: ['api-intro', 'liberty-api-sample']
-        },
-        {
-          title: 'zLUX Samples',
-          collapsable: true,
-          children: [
-            'ui-intro',
-            'iframe-sample',
-            'react-sample',
-            'angular-sample'
-          ]
-        }
-      ],
+      // '/samples/': [
+      //   'intro',
+      //   {
+      //     title: 'Starter App Samples',
+      //     collapsable: true,
+      //     children: ['starter-intro', 'zlux-workshop-starter-app.md']
+      //   },
+      //   {
+      //     title: 'API Extension Samples',
+      //     collapsable: true,
+      //     children: ['api-intro', 'liberty-api-sample']
+      //   },
+      //   {
+      //     title: 'zLUX Samples',
+      //     collapsable: true,
+      //     children: [
+      //       'ui-intro',
+      //       'iframe-sample',
+      //       'react-sample',
+      //       'angular-sample'
+      //     ]
+      //   }
+      // ],
       '/user-guide/': [
         {
           title: 'About this documentation',
