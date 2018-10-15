@@ -2,9 +2,9 @@
 
 :fireworks: :balloon: **First off, thanks for taking the time to contribute!** :sparkler: :confetti_ball:
 
-We provide you a set of guidelines for contributing to Zowe documentation, which are hosted in the [Zowe / docs-site][b5d824b5] on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose content changes to this documentation.
+We provide you a set of guidelines for contributing to Zowe documentation, which are hosted in the [Zowe / docs][b5d824b5] on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose content changes to this documentation.
 
-  [b5d824b5]: https://github.com/zowe/docs-site "https://github.com/zowe/docs-site"
+  [b5d824b5]: https://github.com/zowe/docs "https://github.com/zowe/docs"
 
 
 :arrow_right: [Before you get started](#start)
@@ -63,7 +63,7 @@ Follow these steps:
 
 This section gives writing style guidelines for the Zowe documentation. These are guidelines, not rules. Use your best judgment, and feel free to propose content changes to this documentation in a pull request.
 
-  [8c024bb7]: https://zowe.github.io/docs-site/user-guide/aboutthisdoc.html#sending-a-github-pull-request "https://zowe.github.io/docs-site/user-guide/aboutthisdoc.html#sending-a-github-pull-request"
+  [8c024bb7]: https://zowe.github.io/docs/user-guide/aboutthisdoc.html#sending-a-github-pull-request "https://zowe.github.io/docs/user-guide/aboutthisdoc.html#sending-a-github-pull-request"
 
 :arrow_right: [Headings and titles](#headings)
 

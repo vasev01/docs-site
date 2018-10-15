@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Zowe Docs',
-  base: '/docs-site/',
+  base: '/docs/',
   description: 'Home of Zowe documentation',
   ga: 'UA-123892882-1',
   head: [
@@ -14,7 +14,7 @@ module.exports = {
   ],
   themeConfig: {
     docsDir: 'docs',
-    repo: 'https://github.com/zowe/docs-site',
+    repo: 'https://github.com/zowe/docs',
     editLinks: true,
     editLinkText: 'Propose content change in GitHub.',
     lastUpdated: 'Last Updated', // string | boolean

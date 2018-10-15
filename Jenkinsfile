@@ -107,7 +107,7 @@ node ('ibm-jenkins-slave-nvm') {
             git init
             git add -A
             git commit -m \"deploy from ${env.JOB_NAME}#${env.BUILD_NUMBER}\"
-            git push -f https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/zowe/docs-site.git master:${params.PUBLISH_BRANCH}
+            git push -f https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/zowe/docs.git master:${params.PUBLISH_BRANCH}
           """
         }
       }
