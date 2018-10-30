@@ -180,17 +180,28 @@ Certificate Management in Zowe API Mediation Layer
 How to start APIML on localhost with full HTTPS
 -----------------------------------------------
 
-The `api-layer` repository already contains pre-generated certificates that can be used to start APIML with HTTPS on your computer. The certificates are not trusted by your browser so can either ignore security warning or generate your own certificates and add them to the trust store of your browser or system.
+The https://github.com/zowe/api-layer repository already contains pre-generated certificates that can be used to start APIML with HTTPS on your computer. The certificates are not trusted by your browser so can either ignore security warning or generate your own certificates and add them to the trust store of your browser or system.
 
-The certificates are described in more detail in the `api-layer` repository.
+The certificates are described in more detail in the https://github.com/zowe/api-layer/blob/https-local-certmgmt-%2372/keystore/README.md.
+
 
 Generating own certificates for localhost
 -----------------------------------------
+
+Use following script in the root of the `api-layer` repository:
+
+    scripts/apiml_cm.sh --action setup
 
 
 Generating certificate for a new service on localhost
 -----------------------------------------------------
 
+Use following script in the root of the `api-layer` repository:
+
+    scripts/apiml_cm.sh --action new-service
+
 
 Add a service with existing certificate to APIML on localhost
 -------------------------------------------------------------
+
+TBD
