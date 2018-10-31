@@ -46,13 +46,15 @@ If you installed Zowe CLI from **Bintray**, complete the following steps:
 
     Successful validation of the IBM Db2 plug-in returns the response: `Successfully validated`.
 
+3. [Address the license requirements](#license) to begin using the plug-in.
+
 ### Installing from package
 
 Follow these procedures if you downloaded the Zowe installation package:
 
 #### Downloading the ODBC driver
 
-Download the ODBC driver and set the IBM_DB_INSTALLER_URL environment variable before you install the Db2 plug-in. 
+Download the ODBC driver before you install the Db2 plug-in.
 
 **Follow these steps:**
 
@@ -62,11 +64,11 @@ Download the ODBC driver and set the IBM_DB_INSTALLER_URL environment variable b
 
 3. Place the ODBC driver in the `odbc_cli` folder. **Do not extract the ODBC driver**.  
 
-You downloaded the ODBC driver installation successfully.
+You downloaded and installed the ODBC driver successfully. Proceed to install the plug-in to Zowe CLI. 
 
 #### Installing the Plug-in
 
-Now that the Db2 ODBC CLI driver is installed, install the Db2 plug-in to Zowe CLI. 
+Now that the Db2 ODBC CLI driver is installed, set the IBM_DB_INSTALLER_URL environment variable and install the Db2 plug-in to Zowe CLI.
 
 **Follow these steps:**
 
@@ -90,10 +92,18 @@ Now that the Db2 ODBC CLI driver is installed, install the Db2 plug-in to Zowe C
      set IBM_DB_INSTALLER_URL=C:\odbc_cli
     ```
 
-3. Issue the following command to install the plug-in:
+2. Issue the following command to install the plug-in:
+
     ```
-    zowe plugins install zowe-cli-db2-1.0.0.tgz
+    zowe plugins install zowe-db2-<VERSION_NUMBER>.tgz
     ```
+
+    - **<VERSION_NUMBER>**
+
+        The version of Zowe CLI Plug-in for Db2that you want to install from the package. The following is an example of a full package name for the plug-in: `zowe-db2-1.0.0-next.201810041114.tgz`
+
+   **Important!** On Windows, you must run as an Administrator to install the product and plug-ins.
+
 4. (Optional) After the command execution completes, issue the following command to validate that the installation completed successfully.
 
     ```
@@ -102,7 +112,11 @@ Now that the Db2 ODBC CLI driver is installed, install the Db2 plug-in to Zowe C
 
     Successful validation of the IBM Db2 plug-in returns the response: `Successfully validated`.
 
+5. [Address the license requirements](#license) to begin using the plug-in.
+
 ## License
+
+The following steps are required for both the registry and offline package installation methods: 
 
 1. Locate your client copy of the Db2 license. For the DB2 plugin to successfully connect to a z/OS instance, you must install have a properly licensed and configured DB2 instance. 
     
